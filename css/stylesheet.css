@@ -1,6 +1,5 @@
 /* Цвет текста background: #212121; */
-/* Цвет текста под ссылками 
-#757575 */
+/* Цвет текста под ссылками #757575 */
 /* акцент #2196F3  */
 /* футер белый #FFFFFF */
 /* футер номер и ємейл rgba(255, 255, 255, 0.6); */
@@ -269,7 +268,7 @@ header{
 .modal-checkbox{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -303,13 +302,14 @@ header{
 }
 
 .modal-checkbox-link{
+    margin-left: 6px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--acent-color);
 }
 
-.close-button{
+.modal-close-button{
     position: absolute;
     top:8px;
     right: 8px;
@@ -322,11 +322,10 @@ header{
     border-radius:50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: color 250ms var(--animation-time),
-    background-color 250ms var(--animation-time);
+    transition: fill 250ms var(--animation-time);
 }
-.close-button:hover,
-.close-button:focus{
+.modal-close-button:hover,
+.modal-close-button:focus{
     fill: var(--acent-color);
 }
 .icon-cross{
@@ -529,7 +528,7 @@ header{
 
 /* buttons */
 
-.button-first-page{
+.hero-button{
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
@@ -553,8 +552,8 @@ header{
     background-color 250ms var(--animation-time);
 }
 
-.button-first-page:hover,
-.button-first-page:focus{
+.hero-button:hover,
+.hero-button:focus{
     color: var(--acent-color);
     background-color: var(--background-color-body);
 }
@@ -1175,6 +1174,7 @@ header{
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+    color: var(--primary-white-color);
 
     font-size: 16px;
     line-height: 1.25;
